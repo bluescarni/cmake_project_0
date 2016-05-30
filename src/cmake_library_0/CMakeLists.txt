@@ -17,8 +17,6 @@ install(TARGETS library_0
   RUNTIME  DESTINATION bin)
 install(DIRECTORY include/ DESTINATION include)
 
-export(TARGETS library_0 FILE library_0Config.cmake)
-
 add_executable(test0 tests/test0.cpp)
 
 target_link_libraries(test0 library_0)
